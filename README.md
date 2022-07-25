@@ -1,4 +1,7 @@
-# bakery
+# Bakery Website
+
+Simple website created using HTML and CSS
+Website is mobile responsive
 
 Photos used for this website: Unsplash
 
