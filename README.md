@@ -1,5 +1,7 @@
 # Bakery Website
 
+Link: https://floreaportari.github.io/bakery/
+
 Simple website created using HTML and CSS
 Website is mobile responsive
 
