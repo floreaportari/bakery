@@ -6,11 +6,13 @@
 /* ----------- Header Section ----------- */
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: rgb(41, 34, 34);
 }
 
 .header {
   width: 100%;
   min-height: 100vh;
+  /* Photo by Jason Leung on Unsplash: */
   background-image: radial-gradient(
       rgba(151, 110, 48, 0.5),
       rgba(151, 110, 48, 0.5)
@@ -79,13 +81,13 @@ nav {
 }
 
 .header .row {
-  margin-top: 130px;
+  margin-top: 60px;
 }
 
 .row {
   text-align: center;
   margin: auto;
-  color: rgb(252, 250, 250);
+  color: #fff;
   overflow: hidden;
 }
 
@@ -125,11 +127,11 @@ nav {
   font-family: "Croissant One", cursive;
   font-style: italic;
   font-size: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .lower-par {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 30px;
 }
 
@@ -144,7 +146,7 @@ nav {
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
-  margin: 60px 0 10px;
+  margin: 100px 0 10px;
   transition: all 0.25s;
 }
 
@@ -174,7 +176,6 @@ hr {
   text-align: center;
   font-size: 35px;
   font-family: "Croissant One", cursive;
-  color: rgb(41, 34, 34);
   margin-bottom: 30px;
 }
 
@@ -216,6 +217,7 @@ hr {
 .products {
   margin: 50px 0;
   padding: 0 40px;
+  text-align: center;
 }
 
 .row-2 {
@@ -226,7 +228,6 @@ hr {
 .col-3 {
   flex-basis: 30%;
   min-width: 250px;
-  text-align: center;
   margin: 0 auto;
   padding-bottom: 80px;
   transition: transform 0.2s;
@@ -253,36 +254,85 @@ hr {
   font-weight: 100;
 }
 
-@media only screen and (max-width: 900px) {
+.more-btn {
+  padding: 10px 35px;
+  border: 1px solid #ec7f3f;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 30px 0;
+  transition: transform 0.2s;
+}
+
+.more-btn:hover {
+  outline: 2px solid #ec7f3f;
+  transform: translateY(5px);
+  background-color: #ec7f3f;
+  color: #fff;
+}
+
+/* --------------- Contact Section ------------------- */
+.contact {
+  margin: 20px auto 70px;
+}
+.row-3 {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 60px;
+}
+
+.col-4 {
+  min-width: 100px;
+  padding: 18px 10px;
+}
+
+.col-4 h5 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.col-4 i {
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid #ec7f3f;
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.16s;
+}
+
+.col-4 i:hover {
+  background-color: #ec7f3f;
+  color: #fff;
+}
+
+/* --------------- Footer Section ------------------- */
+.footer {
+  min-height: 15vh;
+  background-color: #ec7f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 910px) {
   .logo {
     flex-basis: 100%;
-    text-align: center;
   }
 
-  .nav-links ul {
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .nav-links ul li {
-    display: block;
-    margin: 0 10px;
-  }
-
-  .nav-links ul li a {
-    color: #000;
-  }
-
+  .nav-links ul,
   .fa-basket-shopping {
     display: none;
   }
+
   .row {
     padding-bottom: 30px;
   }
@@ -290,8 +340,9 @@ hr {
   .fa-bars {
     display: block;
     position: absolute;
-    top: 65px;
-    right: 10px;
+    top: 75px;
+    right: 30px;
+    color: #fff;
   }
   .small-container {
     text-align: center;
@@ -310,7 +361,8 @@ hr {
 }
 
 @media only screen and (max-width: 650px) {
-  .col-3 {
+  .col-3,
+  .col-4 {
     flex-basis: 100%;
   }
 }
