@@ -69,10 +69,12 @@ nav {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
+  transition: border-bottom 0.12s;
 }
 
 .nav-links ul li a:hover {
   color: #ec7f3f;
+  border-bottom: 3px solid #ec7f3f;
 }
 
 .logo img {
@@ -216,7 +218,7 @@ hr {
 /* --------------- Products Section ------------------- */
 .products {
   margin: 50px 0;
-  padding: 0 40px;
+  padding: 0 70px;
   text-align: center;
 }
 
@@ -288,7 +290,7 @@ hr {
 }
 
 .col-4 {
-  min-width: 100px;
+  min-width: 110px;
   padding: 18px 10px;
 }
 
@@ -299,7 +301,7 @@ hr {
 }
 
 .col-4 i {
-  font-size: 30px;
+  font-size: 32px;
   cursor: pointer;
   border: 1px solid #ec7f3f;
   padding: 15px;
@@ -328,8 +330,8 @@ hr {
     flex-basis: 100%;
   }
 
-  .nav-links ul,
-  .fa-basket-shopping {
+  .fa-basket-shopping,
+  .nav-links ul {
     display: none;
   }
 
