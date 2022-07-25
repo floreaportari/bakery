@@ -274,6 +274,10 @@ hr {
   color: #fff;
 }
 
+.more-btn:focus {
+  outline: none;
+}
+
 /* --------------- Contact Section ------------------- */
 .contact {
   margin: 20px auto 70px;
