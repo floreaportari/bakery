@@ -19,14 +19,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 .container {
   max-width: 1190px;
   margin: auto;
   padding: 0 30px;
-  overflow: hidden;
 }
 
 nav {
@@ -66,7 +64,7 @@ nav {
 }
 
 .nav-links ul li a {
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 18px;
   text-decoration: none;
 }
@@ -81,12 +79,12 @@ nav {
 }
 
 .header .row {
-  margin-top: 60px;
+  margin-top: 130px;
 }
 
 .row {
   text-align: center;
-  margin: 0 auto;
+  margin: auto;
   color: rgb(252, 250, 250);
   overflow: hidden;
 }
@@ -162,7 +160,100 @@ nav {
   margin: 70px 0;
 }
 
-@media only screen and (max-width: 800px) {
+hr {
+  width: 88px;
+  border: none;
+  border-top: 3px;
+  height: 3px;
+  background-color: #ec7f3f;
+  border-radius: 3px;
+  margin: 15px 0;
+}
+
+.section-desc {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Croissant One", cursive;
+  color: rgb(41, 34, 34);
+  margin-bottom: 30px;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 400px;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.col-2 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.about-desc {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.col-2 img {
+  width: 100%;
+}
+
+/* --------------- Products Section ------------------- */
+.products {
+  margin: 50px 0;
+  padding: 0 40px;
+}
+
+.row-2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.col-3:hover {
+  transform: translateY(-8px);
+}
+
+.col-3 img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  padding: 20px 7px 5px;
+}
+
+.col-3 h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.col-3 p {
+  font-weight: 10px;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 900px) {
   .logo {
     flex-basis: 100%;
     text-align: center;
@@ -201,5 +292,25 @@ nav {
     position: absolute;
     top: 65px;
     right: 10px;
+  }
+  .small-container {
+    text-align: center;
+  }
+
+  hr {
+    margin: 15px auto;
+  }
+  .col-2 {
+    flex-basis: 100%;
+  }
+
+  .col-3 {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .col-3 {
+    flex-basis: 100%;
   }
 }
